@@ -1,49 +1,53 @@
 /*textarea still needed to complete  */
 
-$primarycolor: #194233;
-$secondarycolor: #4E8FDE;
-$shadeSecondary: #012E00;
+$primarycolor: black;
+$secondarycolor: black;
+$shadeSecondary: white;
 
 .main-body {
-  background-image: linear-gradient(to right, $primarycolor, $secondarycolor);
-  padding-top: 70px;
+  background-color: white;
+  padding-top: 100px;
 }
 .main-container {
 display: flex;
 justify-content: center;
 & .imagebody {
   border: 1px solid black;
-  height: auto;
-  width: 50vw;
+  height: 500px;
+  width: 440px;
   float: left;
 }
 & .bodyimage {
   padding: 0px;
-  height: auto;
-  width: 100%;
-@media screen and (min-width: 294px) {
+  height: 500px;
+  width: 440px;
+  justify-content: center;
 
-}
+
 }
 }
 
 #main {
   overflow-y: scroll;
+  overflow: hidden;
+  width: 650px;
   padding: 0px;
-  height: 300px;
+  height: 500px;
+
   .input[type=text] {
     padding: 10px;
     border-radius: 50px;
   }
   .headfoot {
     text-align: left;
-    background-color: $shadeSecondary;
+    background-color: #1abc9c;
     padding: 40px 50px;
     font-size: 20px;
   }
-  #survey-form {
-    background-color: #012E00;
+  & #survey-form {
+    background-color: white;
   }
+
 
 
   #email-label, #name-label, #name-label1, #drop-down {
