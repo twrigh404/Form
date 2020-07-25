@@ -1,55 +1,67 @@
 /*textarea still needed to complete  */
 
-$cherrywine: #bb0084;
-$darkstout: #33001b;
+$primarycolor: #194233;
+$secondarycolor: #4E8FDE;
+$shadeSecondary: #012E00;
 
 .main-body {
-  background-image: linear-gradient(to right, #194233, #4E8FDE);
-
+  background-image: linear-gradient(to right, $primarycolor, $secondarycolor);
+  padding-top: 70px;
 }
 .main-container {
 display: flex;
 justify-content: center;
 & .imagebody {
   border: 1px solid black;
-  height: 100vh;
+  height: auto;
   width: 50vw;
   float: left;
 }
+& .bodyimage {
+  padding: 0px;
+  height: auto;
+  width: 100%;
+@media screen and (min-width: 294px) {
 
 }
-
-
-
-input[type=text] {
-  padding: 10px;
-  border-radius: 50px;
+}
 }
 
-.headfoot {
-  text-align: center;
-  background-color: #012E00;
-  padding: 40px 50px;
-}
+#main {
+  overflow-y: scroll;
+  padding: 0px;
+  height: 300px;
+  .input[type=text] {
+    padding: 10px;
+    border-radius: 50px;
+  }
+  .headfoot {
+    text-align: left;
+    background-color: $shadeSecondary;
+    padding: 40px 50px;
+    font-size: 20px;
+  }
+  #survey-form {
+    background-color: #012E00;
+  }
 
-#survey-form {
-  background-color: #012E00;
-}
 
+  #email-label, #name-label, #name-label1, #drop-down {
+   display: inline-block;
+   width: 140px;
+   text-align: right;
 
-#email-label, #name-label, #name-label1, #drop-down {
- display: inline-block;
- width: 140px;
- text-align: right;
+  }
 
-}
+  h1 {
+    font-size: 2.4vw;
+    /*@media screen and ()*/
+  }
+  h2 {
+    font-size: 1.7vw;
+  }
+  h3 {
+    font-size: 1.4vw;
+  }
 
-h1 {
-  font-size: 2.4vw;
-}
-h2 {
-  font-size: 1.7vw;
-}
-h3 {
-  font-size: 1.4vw;
 }

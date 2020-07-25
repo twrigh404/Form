@@ -1,6 +1,7 @@
 /*textarea still needed to complete  */
 .main-body {
   background-image: linear-gradient(to right, #194233, #4E8FDE);
+  padding-top: 70px;
 }
 
 .main-container {
@@ -9,41 +10,46 @@
 }
 .main-container .imagebody {
   border: 1px solid black;
-  height: 100vh;
+  height: auto;
   width: 50vw;
   float: left;
 }
-
-input[type=text] {
+.main-container .bodyimage {
+  padding: 0px;
+  height: auto;
+  width: 100%;
+}
+#main {
+  overflow-y: scroll;
+  padding: 0px;
+  height: 300px;
+}
+#main .input[type=text] {
   padding: 10px;
   border-radius: 50px;
 }
-
-.headfoot {
-  text-align: center;
+#main .headfoot {
+  text-align: left;
   background-color: #012E00;
   padding: 40px 50px;
+  font-size: 20px;
 }
-
-#survey-form {
+#main #survey-form {
   background-color: #012E00;
 }
-
-#email-label, #name-label, #name-label1, #drop-down {
+#main #email-label, #main #name-label, #main #name-label1, #main #drop-down {
   display: inline-block;
   width: 140px;
   text-align: right;
 }
-
-h1 {
+#main h1 {
   font-size: 2.4vw;
+  /*@media screen and ()*/
 }
-
-h2 {
+#main h2 {
   font-size: 1.7vw;
 }
-
-h3 {
+#main h3 {
   font-size: 1.4vw;
 }
 
