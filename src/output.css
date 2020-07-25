@@ -1,25 +1,19 @@
 /*textarea still needed to complete  */
-
-$cherrywine: #bb0084;
-$darkstout: #33001b;
-
 .main-body {
   background-image: linear-gradient(to right, #194233, #4E8FDE);
-
 }
+
 .main-container {
-display: flex;
-justify-content: center;
-
+  display: flex;
+  justify-content: center;
 }
-
-
-.imagebody {
+.main-container .imagebody {
   border: 1px solid black;
   height: 100vh;
   width: 50vw;
   float: left;
 }
+
 input[type=text] {
   padding: 10px;
   border-radius: 50px;
@@ -35,20 +29,22 @@ input[type=text] {
   background-color: #012E00;
 }
 
-
 #email-label, #name-label, #name-label1, #drop-down {
- display: inline-block;
- width: 140px;
- text-align: right;
-
+  display: inline-block;
+  width: 140px;
+  text-align: right;
 }
 
 h1 {
   font-size: 2.4vw;
 }
+
 h2 {
   font-size: 1.7vw;
 }
+
 h3 {
   font-size: 1.4vw;
 }
+
+/*# sourceMappingURL=output.css.map */
