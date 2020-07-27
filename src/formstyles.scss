@@ -67,7 +67,24 @@ justify-content: center;
     padding: 10px;
     margin-top: 10px;
     }
-
+  #name {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  #Lastname {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
+  #email {
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+  }
 
 
   #email-label, #name-label, #name-label1, #drop-down {
