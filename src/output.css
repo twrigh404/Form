@@ -8,6 +8,12 @@
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 700px) {
+  .main-container {
+    display: inline-block;
+    width: 100vw;
+  }
+}
 .main-container .imagebody {
   padding: 1px;
   border: 1px solid black;
@@ -23,6 +29,12 @@
     height: 400px;
   }
 }
+@media screen and (max-width: 700px) {
+  .main-container .imagebody {
+    display: inline-block;
+    width: 100vw;
+  }
+}
 .main-container .bodyimage {
   padding: 0px;
   height: 500px;
@@ -34,6 +46,12 @@
   .main-container .bodyimage {
     width: 400px;
     height: 400px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main-container .bodyimage {
+    display: inline-block;
+    width: 100vw;
   }
 }
 

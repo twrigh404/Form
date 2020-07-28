@@ -11,6 +11,10 @@ $shadeSecondary: white;
 .main-container {
 display: flex;
 justify-content: center;
+@media screen and (max-width: 700px) {
+  display: inline-block;
+  width: 100vw;
+}
 & .imagebody {
   padding: 1px;
   border: 1px solid black;
@@ -22,7 +26,14 @@ justify-content: center;
   @media screen and (max-width: 900px)  {
     width: 400px;
     height: 400px;
+};
+  @media screen and (max-width: 700px) {
+    display:inline-block;
+    width: 100vw;
+
+
 }
+
 }
 & .bodyimage {
   padding: 0px;
@@ -34,7 +45,13 @@ justify-content: center;
     width: 400px;
     height: 400px;
 
-  }
+  };
+  @media screen and (max-width: 700px) {
+    display:inline-block;
+    width: 100vw;
+
+
+}
 
 
 }
