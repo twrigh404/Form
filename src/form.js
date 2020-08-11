@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Input from './input';
 import TextField from '@material-ui/core/TextField';
 
 class Form extends Component {
