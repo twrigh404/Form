@@ -1,55 +1,46 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Input from './input';
+import TextField from '@material-ui/core/TextField';
 
 class Form extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      newUser: {
-        name: '',
-        email: '',
-        age: '',
-        gender: '',
-        expertise: '',
-        about: ''
+      FirstName: '',
+      LastName: ''
+    }
+}
+ handleFirstChange = event => {
+   this.setState({
+     FirstName: event.target.value
+   })
+ }
 
-      }};
+ handleLastChange = event => {
+   this.setState({
+     LastName: event.target.value
+   })
+ }
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleClearForm = this.handleClearForm.bind(this);
-    this.handleFullName = this.handleFullName.bind(this);
-
+handleSubmit = event => {
+  event.preventDefault();
 }
 
 
 
-    handleFullName(event) {
-      let value = event.target.value;
-      this.setState( state => ({ newUser : state.newUser, name: value}));
-    }
-
-    handleClearForm() {
-
-    }
-
-    handleSubmit(event) {
-      event.preventDefault();
-    }
-
     render() {
       return (
-          <form id="survey-form"onSubmit={this.handleSubmit}>
-            <Input type={'text'}
-               title= {'Full Name'}
-               name= {'name'}
-               value={this.state.newUser.name}
-               placeholder = {'Enter your name'}
-               onChange = {this.handleFullName}/> {/* Name of the user */}
-
-
+          <form id="survey-form" onSubmit={this.handleSubmit}>
+          <div>
+            <TextField label="FirstName" type="text" variant="filled" value={this.state.FirstName} onChange={this.handleFirstChange}/>
+          </div>
+          <div>
+            <TextField label="LastName" type="text" value={this.state.LastName} onChange={this.handleLastChange}/>
+          </div>
           </form>
+
       );
     }
   }
