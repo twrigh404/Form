@@ -1,4 +1,10 @@
 /*textarea still needed to complete  */
+@media (min-width: 1200px) {
+  canvas {
+    width: 100vw;
+  }
+}
+
 .main {
   color: red;
 }

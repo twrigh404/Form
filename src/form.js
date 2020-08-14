@@ -13,37 +13,20 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 
-class Form extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      FirstName: '',
-      LastName: ''
-    }
-}
- handleFirstChange = event => {
-   this.setState({
-     FirstName: event.target.value
-   })
- }
-
- handleLastChange = event => {
-   this.setState({
-     LastName: event.target.value
-   })
- }
-
-handleSubmit = event => {
-  event.preventDefault();
-}
+const useStyles = makeStyles({
+  root: {
+    color: "red",
+    position: "absolute",
+    display: "block",
 
 
+  },
+});
 
-    render() {
-      return (
-
-  <Container className="Main" component="main" maxWidth="xs">
+export default function Hook() {
+  const classes = useStyles();
+  return (
+    <Container component="main" maxWidth="xs">
     <CssBaseline />
     <div className="">
       <Avatar className="">
@@ -128,9 +111,4 @@ handleSubmit = event => {
     <Box mt={5}>
     </Box>
   </Container>
-);
-
-}
-  }
-
-  export default Form;
+);}
