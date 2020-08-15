@@ -4,27 +4,23 @@ import Header from './header';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-
+import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
   root: {
-    position: "fixed",
-    top: "50vh",
-    right: "50vw",
 
 
 
 
   },
-  TypographyStyle: {
-
-  }
 });
 
+
 export default function App() {
+  const classes = useStyles();
   return (
-    <div className="App">
+    <Box display="flex" justifyContent="center" alignItems="center" className={classes.root}>
       <Header />
-    </div>
+    </Box>
     );
 }

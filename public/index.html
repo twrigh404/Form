@@ -20,12 +20,18 @@
         let img = new PIXI.Sprite.from("leaaf.jpg");
         img.width = window.innerWidth;
         img.height = window.innerHeight;
-        window.onresize = function(event) {
+
+
+        function resizedawindow() {
           img.width = window.innerWidth;
           img.height = window.innerHeight;
         }
 
+        //window.addEventListener('resize', reiszedawindow);
+
         app.stage.addChild(img);
+
+
 
 
 

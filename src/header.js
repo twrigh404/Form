@@ -7,9 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
-    position: "fixed",
-    top: "50vh",
-    right: "50vw",
+
 
 
 
@@ -24,8 +22,8 @@ export default function Header() {
   const classes = useStyles();
     return(
       <Container className={classes.root} >
-        <Typography>Fan Club Benefits</Typography>
-        <Typography>Hi! This is a survey to better suite you to the needs of Fan's Club!</Typography>
+        <Typography align="center">lorem ipsum </Typography>
+        <Typography align="center">jaorem ipsum lorem lorem ip is mlorem ipsumipsum</Typography>
         <Form />
       </Container>
 
