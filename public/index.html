@@ -22,14 +22,18 @@
         img.height = window.innerHeight;
 
 
+
         function resizedawindow() {
-          img.width = window.innerWidth;
-          img.height = window.innerHeight;
+          const Canvas = document.querySelector(canvas);
+          Canvas.width = window.innerWidth;
+          Canvas.height = window.innerHeight;
         }
 
-        //window.addEventListener('resize', reiszedawindow);
 
         app.stage.addChild(img);
+
+        window.addEventListener('resize', resizedawindow);
+
 
 
 
