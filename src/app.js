@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Header from './header';
 import { makeStyles } from '@material-ui/core/styles';
-import Box from '@material-ui/core/Box';
+import { Paper, Box} from '@material-ui/core';
 
 const useStyles = makeStyles({
   root: {
@@ -22,8 +22,10 @@ const useStyles = makeStyles({
 export default function App() {
   const classes = useStyles();
   return (
-    <Box display="flex" justifyContent="center" alignItems="center" className={classes.root}>
-      <Header />
-    </Box>
+    <Paper>
+      <Box display="flex" justifyContent="center" alignItems="center" className={classes.root}>
+        <Header />
+      </Box>
+    </Paper>
     );
 }

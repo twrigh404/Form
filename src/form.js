@@ -18,6 +18,7 @@ const useStyles = makeStyles({
   root: {
     color: 'white',
   },
+
 });
 
 export default function Hook() {
@@ -50,7 +51,7 @@ export default function Hook() {
           </Grid>
           <Grid item xs={12} sm={6}>
             <TextField
-              variant="outlined"
+              variant="filled"
               required
               fullWidth
               id="lastName"
