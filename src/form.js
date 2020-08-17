@@ -15,7 +15,7 @@ import Container from '@material-ui/core/Container';
 
 
 const useStyles = makeStyles({
-  colorFont: {
+  root: {
     color: 'white',
   },
 });
@@ -27,7 +27,7 @@ export default function Hook() {
     <CssBaseline />
     <div className="">
       <Avatar className="">
-        <LockOutlinedIcon />
+        <LockOutlinedIcon/>
       </Avatar>
       <Typography component="h1" variant="h5">
         Sign up
@@ -36,9 +36,11 @@ export default function Hook() {
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <TextField
+              color="secondary"
+              className=""
               autoComplete="fname"
               name="firstName"
-              variant="outlined"
+              variant="filled"
               required
               fullWidth
               id="firstName"

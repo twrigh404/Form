@@ -11,7 +11,7 @@ const useStyles = makeStyles({
     top: "40%",
     left: "40%",
     right: "60%",
-
+    color: "white",
 
 
 
