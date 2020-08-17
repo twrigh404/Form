@@ -16,10 +16,7 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
   colorFont: {
-    color: "gold",
-
-
-
+    color: 'white',
   },
 });
 

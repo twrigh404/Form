@@ -1,13 +1,16 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Header from './header';
-import Container from '@material-ui/core/Container';
-import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Box from '@material-ui/core/Box';
 
 const useStyles = makeStyles({
   root: {
+    position: "fixed",
+    width: "500px",
+    top: "40%",
+    left: "40%",
+    right: "60%",
 
 
 
