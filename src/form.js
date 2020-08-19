@@ -16,7 +16,7 @@ import Container from '@material-ui/core/Container';
 
 const useStyles = makeStyles({
   root: {
-    color: 'white',
+    color: 'primary',
   },
 
 });
@@ -33,11 +33,11 @@ export default function Hook() {
       <Typography component="h1" variant="h5">
         Sign up
       </Typography>
-      <form className="" noValidate>
+      <form className={classes.root} noValidate>
         <Grid container spacing={2}>
           <Grid item xs={12} sm={6}>
             <TextField
-              color="secondary"
+              color="primary"
               className=""
               autoComplete="fname"
               name="firstName"
