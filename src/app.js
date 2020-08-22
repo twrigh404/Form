@@ -1,8 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './header';
-import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import theme from './Components/UI/theme';
+import Header from './Components/UI/header';
 import { Paper, Box} from '@material-ui/core';
+import { ThemeProvider, makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles({
   root: {
@@ -19,13 +20,16 @@ const useStyles = makeStyles({
 });
 
 
+
 export default function App() {
   const classes = useStyles();
   return (
-    <Paper>
-      <Box display="flex" justifyContent="center" alignItems="center" className={classes.root}>
-        <Header />
-      </Box>
-    </Paper>
+    <ThemeProvider theme={theme}>
+      <Paper>
+        <Box display="flex" justifyContent="center" alignItems="center" className={classes.root}>
+          <Header />
+        </Box>
+      </Paper>
+    </ThemeProvider>
     );
 }
