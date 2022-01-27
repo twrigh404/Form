@@ -20,7 +20,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "sass": "^1.26.10",
-    "three": "^0.119.1"
+    "three": "^0.137.0"
   },
   "scripts": {
     "start": "nodemon --exec react-scripts start",
